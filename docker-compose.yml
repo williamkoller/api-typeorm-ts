@@ -12,3 +12,5 @@ services:
       PGDATA: /var/lib/postgresql/data/pgdata
     ports:
       - ${DB_PORT}:${DB_PORT}
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
