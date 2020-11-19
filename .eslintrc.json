@@ -24,6 +24,8 @@
   "rules": {
     "prettier/prettier": "error",
     "class-methods-use-this":"off",
+    "no-console": "off",
+    "consistent-return": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
