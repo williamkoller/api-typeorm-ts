@@ -1,8 +1,7 @@
 import { Router } from 'express'
-import classRouter from './class.routes'
 
 const routes = Router()
 
-routes.use('/class', classRouter)
+routes.use('/class')
 
 export default routes
