@@ -22,12 +22,12 @@ export default class CreateStudents1605757383931 implements MigrationInterface {
             type: 'varchar',
           },
           {
-            name: 'created_At',
+            name: 'created_at',
             type: 'timestamp',
             default: 'now()',
           },
           {
-            name: 'updated_At',
+            name: 'updated_at',
             type: 'timestamp',
             default: 'now()',
           },

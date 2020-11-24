@@ -14,16 +14,16 @@ export default class CreateLessons1605757094492 implements MigrationInterface {
             default: 'uuid_generate_v4()',
           },
           {
-            name: 'descirption',
+            name: 'description',
             type: 'varchar',
           },
           {
-            name: 'created_At',
+            name: 'created_at',
             type: 'timestamp',
             default: 'now()',
           },
           {
-            name: 'updated_At',
+            name: 'updated_at',
             type: 'timestamp',
             default: 'now()',
           },

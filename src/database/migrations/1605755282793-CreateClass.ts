@@ -22,12 +22,12 @@ export default class CreateClass1605755282793 implements MigrationInterface {
             type: 'integer',
           },
           {
-            name: 'created_At',
+            name: 'created_at',
             type: 'timestamp',
             default: 'now()',
           },
           {
-            name: 'updated_At',
+            name: 'updated_at',
             type: 'timestamp',
             default: 'now()',
           },
