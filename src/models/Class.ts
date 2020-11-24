@@ -1,4 +1,5 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm'
+import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm'
+import Lesson from './Lesson'
 
 @Entity()
 export default class Class {
@@ -16,4 +17,7 @@ export default class Class {
 
   @UpdateDateColumn()
   updated_at: Date
+
+  @OneToMany((type) => Lesson, (classes) => Class)
+  lessons: Lesson[]
 }
