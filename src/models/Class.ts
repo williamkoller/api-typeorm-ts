@@ -12,8 +12,8 @@ export default class Class {
   duration: number
 
   @CreateDateColumn()
-  createdAt: Date
+  created_at: Date
 
   @UpdateDateColumn()
-  updatedAt: Date
+  updated_at: Date
 }
