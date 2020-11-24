@@ -8,9 +8,10 @@
 ### To run this project, follow the below steps
 
 ##### Build Project
-   - `npm i`
-   - `docker-compose up --build`
-   
+
+- `npm i`
+- `docker-compose up --build`
+
 #### Useful commands
 
 - running typeorm migration run
@@ -18,3 +19,6 @@
 
 - running typeorm migrate create
   `npm run typeorm migration:create -- -n <SchemaTable>`
+
+-- running typeorm create a migration from a model
+`npm run typeorm migration:generate -- -n <RelationClassStudent>`
