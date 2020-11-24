@@ -20,5 +20,5 @@
 - running typeorm migrate create
   `npm run typeorm migration:create -- -n <SchemaTable>`
 
--- running typeorm create a migration from a model
+- running typeorm create a migration from a model
 `npm run typeorm migration:generate -- -n <RelationClassStudent>`
