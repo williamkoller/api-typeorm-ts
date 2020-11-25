@@ -16,6 +16,11 @@ services:
       - ${DB_PORT_INTERN}:${DB_PORT}
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
+  redis:
+    image: redis
+    hostname: ${HOST_REDIS}
+    ports:
+      - ${PORT_REDIS}:${PORT_REDIS}
 
 volumes:
   pgdata:
