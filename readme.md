@@ -3,7 +3,7 @@
 - Docker
 - Docker Compose
 
-### This project is used Express, TypeORM and PostgreSQL
+### This project is used Express, TypeORM, PostgreSQL and Redis
 
 ### To run this project, follow the below steps
 
@@ -21,4 +21,4 @@
   `npm run typeorm migration:create -- -n <SchemaTable>`
 
 - running typeorm create a migration from a model
-`npm run typeorm migration:generate -- -n <RelationClassStudent>`
+  `npm run typeorm migration:generate -- -n <RelationClassStudent>`
