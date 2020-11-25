@@ -16,8 +16,8 @@ export default class Student {
   id: string
 
   @Column()
-  @MaxLength(50)
-  @MinLength(2)
+  @MaxLength(50, { message: 'Name must be a maximum of 50 characters' })
+  @MinLength(2, { message: 'Name must be at least 1 characters' })
   name: string
 
   @Column()

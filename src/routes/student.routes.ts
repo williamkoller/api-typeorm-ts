@@ -22,7 +22,7 @@ studentRouter.post(
         const res = await repo.save(student)
         return response.status(201).json(res)
       }
-      return response.status(400).json(erros)
+      return response.status(400).json(erros.map((v) => v.constraints))
     } catch (error) {
       console.log('error.message: ', error.message)
       return response.status(400).send({
