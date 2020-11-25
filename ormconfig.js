@@ -6,6 +6,8 @@ console.log('process.env.DB_PASSWORD :>>', process.env.DB_PASSWORD)
 console.log('process.env.DB_NAME :>>', process.env.DB_NAME)
 console.log('process.env.PORT_REDIS :>>', process.env.PORT_REDIS)
 console.log('process.env.HOST_REDIS :>>', process.env.HOST_REDIS)
+console.log('process.env.DB_KEY :>>', process.env.DB_KEY)
+console.log('process.env.DB_IV :>>', process.env.DB_IV)
 
 module.exports = {
   "type": "postgres",
