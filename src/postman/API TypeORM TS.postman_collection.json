@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "ad251c89-271e-467c-bc5d-3b4971c2e24a",
+		"name": "API TypeORM TS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Class",
+			"item": [
+				{
+					"name": "Post Create Class",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Engenharia de Software IIIII\",\n  \"duration\": 60\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/class",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"class"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  All Class",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/class",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"class"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get  Class Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/class/I",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"class",
+								"I"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Post Create Student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"William Koller\",\n  \"key\": 12345,\n  \"email\": \"williamkoller@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/student",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All  Student",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/student",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"student"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Lesson",
+			"item": [
+				{
+					"name": "Post Create Lesson",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"description\": \"Atividade 1\",\n  \"classes\": {\n    \"id\": \"7287e6d5-41f6-46a5-9286-e1c1b2b5a0e0\",\n    \"name\": \"Engenharia de Software I\",\n    \"duration\": 60\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/lesson",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lesson"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Lesson",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/lesson",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"lesson"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Content",
+			"item": [
+				{
+					"name": "Get All Content",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/content",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"content"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Create Content",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/content",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"content"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
