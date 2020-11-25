@@ -10,7 +10,7 @@ import {
 import Class from './Class'
 import Content from './Content'
 
-@Entity()
+@Entity('lesson')
 export default class Lesson {
   @PrimaryGeneratedColumn('uuid')
   id: string

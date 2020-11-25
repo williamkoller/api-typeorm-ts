@@ -15,10 +15,10 @@ export default class Content {
   id: string
 
   @Column()
-  name: string
+  description: string
 
   @Column()
-  key: number
+  link_content: string
 
   @CreateDateColumn()
   created_at: Date
