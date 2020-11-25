@@ -9,13 +9,18 @@ import {
 } from 'typeorm'
 import { IsEmail, Max, MaxLength, Min, MinLength } from 'class-validator'
 import Class from './Class'
+import { MyCrypto } from '../helpers/crypto'
 
 @Entity('student')
 export default class Student {
   @PrimaryGeneratedColumn('uuid')
   id: string
 
-  @Column()
+  @Column({
+    type: 'varchar',
+    nullable: false,
+    transformer: MyCrypto,
+  })
   @MaxLength(50, { message: 'Name must be a maximum of 50 characters' })
   @MinLength(2, { message: 'Name must be at least 1 characters' })
   name: string
@@ -25,7 +30,7 @@ export default class Student {
   @Min(10000)
   key: number
 
-  @Column({ unique: true })
+  @Column({ type: 'varchar', unique: true, transformer: MyCrypto })
   @IsEmail()
   email: string
 
