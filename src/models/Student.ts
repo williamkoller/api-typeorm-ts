@@ -7,18 +7,27 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm'
+import { IsEmail, Max, MaxLength, Min, MinLength } from 'class-validator'
 import Class from './Class'
 
-@Entity()
+@Entity('student')
 export default class Student {
   @PrimaryGeneratedColumn('uuid')
   id: string
 
   @Column()
-  description: string
+  @MaxLength(50)
+  @MinLength(2)
+  name: string
 
   @Column()
-  link_content: string
+  @Max(99999)
+  @Min(10000)
+  key: number
+
+  @Column({ unique: true })
+  @IsEmail()
+  email: string
 
   @CreateDateColumn()
   created_at: Date
